@@ -926,7 +926,7 @@ if(isset($_POST['email']))
 	
 	if(!empty($email) && !empty($senha))
 	{
-		$u->conectar("tela_login","localhost","root","");
+		$u->conectar("f1nzzxyvkkqvzkho","ixnzh1cxch6rtdrx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com","y97ggnccrr89167r","rdn20m8ld5opdhwg");
 		if($u->msgErro == "")
 		{
 			if($u->logar($email,$senha))
