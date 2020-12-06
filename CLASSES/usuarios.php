@@ -7,14 +7,11 @@ Class Usuario
 
 	public function conectar($nome, $host, $usuario, $senha)
 	{
-		$nome = "f1nzzxyvkkqvzkho";
-		$host = "ixnzh1cxch6rtdrx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-		$usuario = "y97ggnccrr89167r";
-		$senha = "rdn20m8ld5opdhwg";
+		
 		global $pdo;
 		try 
 		{
-			$pdo = new PDO("mysql:dbname=".$nome,$usuario,$senha);
+			$pdo = new PDO("mysql:host=$host;dbname=".$nome,$usuario,$senha);
 		} catch (PDOException $e) {
 			$msgErro = $e->getMessage();
 		}
