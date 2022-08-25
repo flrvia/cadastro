@@ -49,7 +49,7 @@ include_once 'footer.php';
 					<td><?php echo $dados['preço']; ?></td>
 					<td><?php echo $dados['quantidade']; ?></td>
 					<td><a href="editar.php?id=<?php echo $dados['id']; ?>" class="btn-floating purple"><i class="material-icons">edit</i></a></td>
-					<td><a href="#modal<?php echo $dados['id']; ?>" class="btn-floating pink modal-trigger"><i class="material-icons">delete</i></a></td>
+					<td><a href="delete.php?id=<?php echo $dados['id']; ?>" class="btn-floating pink modal-trigger"><i class="material-icons">delete</i></a></td>
 					<!-- Modal Structure -->
 					<div id="modal<?php echo $dados['id']; ?>" class="modal">
 						<div class="modal-content">
